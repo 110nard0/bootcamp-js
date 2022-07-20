@@ -110,3 +110,22 @@ const rollDice = () => (
 //This is their most compact form
 
 const add = (a, b) => a + b;
+
+//v. Keyword 'this' in arrow functions refers to the value of 'this' when the function is created
+//Hence, it shows undefned when alertName() is called because its scope is window but it works in shoutName() because its scope is fullName()
+const person = {
+    firstName: 'Viggo',
+    lastName: 'Mortensen',
+    fullName: function () {
+        return `${this.firstName} ${this.lastName}`
+    },
+    alertName: () => {
+        alert(`${this.firstName} ${this.lastName}`)
+    },
+    shoutName: function () {
+        setTimeout(() => {
+            console.log(this);
+            console.log(this.fullName())
+        }, 3000)
+    }
+}

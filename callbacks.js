@@ -162,4 +162,4 @@ const highestRated = movieList.reduce((bestMovie, currentMovie) => {
 // We can provide an initial value as the 2nd argument to reduce:
 const evens = [2, 4, 6, 8];
 evens.reduce((sum, num) => sum + num) //20
-evens.reduce((sum, num) => sum + num, 80) //120
+evens.reduce((sum, num) => sum + num, 80) //100
