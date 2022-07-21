@@ -133,7 +133,7 @@ movieList.every(movie => movie.year > 2015);
 
 
 //5) The some method is similar but only needs one item to satisfy the condition in order to return true.
-//It only returns false when no itemv in an array evaluates as truthy
+//It only returns false when no item in an array evaluates as truthy
 
 exams.some(score => score < 80);
 

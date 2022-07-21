@@ -89,14 +89,14 @@ const expo = (x, y) => {
     return x ** y;
 }
 
-//i. Arrow functions can take no parameters:
-const rollDie = () => {
-    return Math.floor(Math.random() * 6) + 1
-}
-
-//ii. Use no parentheses if there is a single argument: 
+//i. They can use no parentheses for params if there is a single argument: 
 const square2 = num => {
     return num * num;
+}
+
+//ii. Arrow functions can be defined without parameters:
+const rollDie = () => {
+    return Math.floor(Math.random() * 6) + 1
 }
 
 //iii. Use parentheses in place of curly braces to perform an implicit return
