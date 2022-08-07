@@ -127,17 +127,17 @@ movies.filter(m => m.score > 80).map(m => m.title);
 //true if every item satisfies the condition and false if x >= 1 item fails the condition 
 const exams = [80, 73, 89, 92, 75, 98, 66, 84, 91, 77];
 
-exams.every(score => score > 80);
+exams.every(score => score > 80); //false
 
-movieList.every(movie => movie.year > 2015);
+movieList.every(movie => movie.year > 2015); //false
 
 
 //5) The some method is similar but only needs one item to satisfy the condition in order to return true.
 //It only returns false when no item in an array evaluates as truthy
 
-exams.some(score => score < 80);
+exams.some(score => score < 80); //true
 
-movieList.some(movie => movie.year > 2015);
+movieList.some(movie => movie.year > 2015); //true
 
 
 //6) The reduce method executes a 'reducer' function on each element of an array, resulting in a single end return value
