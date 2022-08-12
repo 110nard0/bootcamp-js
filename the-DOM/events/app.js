@@ -11,6 +11,6 @@ function scream() {
 btn.onmouseenter = scream;
 
 const butt = document.querySelector('#v3');
-butt.addEventListener('vclick', () => {
+butt.addEventListener('click', () => {
     alert("DEEZ NUTS! YOU WIN!!")
 })

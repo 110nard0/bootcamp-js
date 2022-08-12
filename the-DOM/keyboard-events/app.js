@@ -12,8 +12,8 @@ input.addEventListener('keyup', function () {
 })
 
 window.addEventListener('keydown', function (e) {
-    console.log(e.code);
-    console.log(e.key);
+    console.log(e.code); //e.g. KeyA, Digit8 -- keystroke encoding
+    console.log(e.key); //e.g. a, 8 -- actual key pressed
 })
 
 
