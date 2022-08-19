@@ -53,7 +53,7 @@ delayedColorChange('red', 1000, () => {
 });
 
 
-//common practical application of callback functions used to collect data from an API
+//common practical application of callback functions: used to collect data from an API
 searchMoviesAPI('lionheart', () => {
 	saveToMYDB(movies, () => {
 		//if save to database works, run this:
